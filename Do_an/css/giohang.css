@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+}
+
+/* TOP */
+.top{
+    background-color: orange;
+    height: 40px;
+}
+
+.top a:first-child{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    left: 60px;
+}
+.top a:nth-child(2){
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    left: 100px;
+}
+.top a:nth-child(3){
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+    left: 130px;
+}
+.top a:nth-child(4){
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 0 5px 0 380px;
+    position: relative;
+    top: 8px;
+}
+.top a:nth-child(5){
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 0 120px 0 0;
+    position: relative;
+    top: 8px;
+}
+.top a:nth-child(6){
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+}
+
+
+.home{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    left: 120px;
+    transition: 0.3s;
+}
+
+.home:hover{
+    transform: scale(1.1,1.1);
+}
+
+.home a{
+    text-decoration: none;
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 5px;   
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    color: orange;
+}
+
+/* BODY */
+.body{
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.body__head{
+    background-color: #fff;
+    width: 1220px;
+    height: 40px;
+    position: relative;
+    left: 130px;
+}
+
+.body__head p:first-child{
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 550px 0 20px;
+}
+.body__head p:nth-child(2){
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 150px 0 15px;
+}
+.body__head p:nth-child(3){
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 120px 0 15px;
+}
+.body__head p:nth-child(4){
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0px 0 15px;
+}
+
+
+.body__body{
+    position: relative;
+    left: 130px;
+}
+
+.product{
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.product a{
+    display: flex;
+    text-decoration: none;
+}
+
+.caption{
+    position: relative;
+    top: 25px;
+    left: 20px;
+    font-size: large;
+    color: #fff;
+}
+
+.quantity{
+    position: relative;
+    left: 320px;
+    top: 80px;
+    color: #fff;
+    font-size: large;
+}
+
+.quantity button{
+    padding: 0 8px;
+    margin: 0 8px;
+}
+
+.product p{
+    position: relative;
+    left: 470px;
+    top: 80px;
+    font-size: large;
+    display: inline-block;
+    color: #fff;
+}
+
+.product i{
+    position: relative;
+    left: 630px;
+    top: 80px;
+    font-size: large;
+}
+
+.total{
+    display: flex;
+}
+.total p:first-child{
+    color: #fff;
+    margin: 20px 0 0 650px;
+    font-size: larger;
+}
+.total p:nth-child(2){
+    color: #fff;
+    margin: 20px 0 0 160px;
+    font-size: large;
+}
+.total a{
+    position: relative;
+    top: 10px;
+    left: 120px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 38, 38);
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+
+
+
+.footer{
+    width: 1479px;
+    background-color: #88f1e3;
+    padding: 20px;
+    display: inline-block;
+}
+
+.footer__logo{
+    margin-bottom: 10px;
+    position: relative;
+    left: 60px;
+    display: inline-block;
+}
+.footer__logo a{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.footer__logo a:hover{
+    color: rgb(241, 16, 16);
+}
+
+.footer__child{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__left{
+    flex-basis: 25%;
+}
+.footer__right a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.footer__right a:hover{
+    color: rgb(241, 16, 16);
+}
+
+
+.footer__center{
+    flex-basis: 25%;
+}
+.footer__right{
+    flex-basis: 25%;
+}
+
+.title{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+
+.fa-phone-square-alt, .fa-facebook-square, .fa-twitter-square, .fa-envelope{
+    margin-right: 15px;
+    font-size: 30px;
+}

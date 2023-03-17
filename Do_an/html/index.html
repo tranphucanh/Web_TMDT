@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT Store-Cửa hàng Laptop</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/6084ef8789.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="top">
+        <a href="#"><i class="fas fa-dollar-sign"></i> Cam kết giá tốt nhất</a>
+        <a href="#"><i class="fas fa-truck"></i> Miễn phí vận chuyển</a>
+        <a href="#"><i class="fas fa-handshake"></i> Thanh toán dễ dàng</a>
+        <a href="login.html"><i class="fas fa-user-circle"></i> Đăng nhập</a>
+        <a href="sign_up.html"> Đăng ký</a>
+        <a href="giohang.html"><i class="fas fa-cart-arrow-down"></i></i> Giỏ hàng</a>
+    </div>
+
+    <div class="head">
+        <div class="home">
+            <a href="index.html" >   <i class="fas fa-laptop"> AIT Store</i>   </a>
+        </div>
+
+        <div class="search">
+            <input class="timkiem" id="kw" type="text" placeholder="Nhập tên sản phẩm..."/> 
+            <button type="submit" id="btnSearch" onclick="search()"><i class="fas fa-search"></i></button> 
+        </div>
+
+        
+        <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i></a>
+            <a href="#"> Thông tin liên hệ </a>
+            <a href="#">0909090909</a>
+        </div>
+
+        
+        
+    </div>
+
+    <div id="thongbao">
+        <div class="thongbao">
+            <div class="thongbao__icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+    
+            <div class="thongbao__body">
+                <h3 style="color: red;">THÔNG BÁO</h3>
+                <p>Bạn vui lòng đăng nhập để mua hàng!</p>
+            </div>
+    
+            <div class="thongbao__close">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="menu">
+
+        <div class="dropdown">
+            <button class="drop">GIỚI THIỆU</button>
+            <div class="dropdown-content">
+                <a href="#">Giới thiệu cửa hàng</a>
+                <a href="#">Sản phẩm sắp ra mắt</a>
+                <a href="#">Sản phẩm mới</a>
+            </div>
+        </div>    
+
+        <div class="dropdown">
+            <button class="drop">HƯỚNG DẪN THANH TOÁN</button>
+            <div class="dropdown-content">
+                <a href="#">Thẻ ngân hàng</a>
+                <a href="#">Zalo pay</a>
+                <a href="#">Tiền mặt</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="drop">HƯỚNG DẪN TRẢ GÓP</button>
+            <div class="dropdown-content">
+                <a href="#">Trả góp tại cửa hàng</a>
+                <a href="#">Trả góp qua Zalo pay</a>
+                <a href="#">Trả góp qua thẻ</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="drop">CHÍNH SÁCH BẢO HÀNH</button>
+            <div class="dropdown-content">
+                <a href="#">Phiếu bảo hành</a>
+                <a href="#">Bảo hành tại cửa hàng</a>
+                <a href="#">Bảo hành tại nhà</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="drop">TIN CÔNG NGHỆ</button>
+            <div class="dropdown-content">
+                <a href="tintuc.html">Tin mới</a>
+                <a href="#">Mẹo hay</a>
+                <a href="#">Sản phẩm mới</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="drop">THÔNG TIN LIÊN HỆ</button>
+            <div class="dropdown-content">
+                <a href="lienhe.html">Góp ý</a>
+                <a href="#">FB: AIT Store</a>
+                <a href="#">Zalo: 0909090909</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="banner">
+        <div class="banner__content">
+            <p><i class="fas fa-shipping-fast" style="margin-right: 10px;"></i>Giao hàng nhanh toàn quốc</p>
+            <p><i class="fab fa-windows" style="margin-right: 10px;"></i> 100% tích hợp windows bản quyền</p>
+            <p><i class="fas fa-undo-alt" style="margin-right: 10px;"></i> Đổi trả trong vòng 1 tháng</p>
+            <p><i class="fas fa-shield-alt" style="margin-right: 10px;"></i> Bảo hành tới 2 năm</p>
+            <p><i class="fas fa-handshake" style="margin-right: 10px;"></i> Hỗ trợ trả góp 0%</p>
+        </div>
+    </div>
+
+    <div class="brand__list">
+        <div class="brand__content" >
+            <a href="brand/acer.html" style="color:rgb(0, 255, 0); font-weight: bolder;">ACER</a>
+        </div>
+        
+        <div class="brand__content" >
+            <a href="brand/asus.html" style="color:rgb(0, 4, 255); font-weight: bolder;">ASUS</a>
+        </div>
+
+        <div class="brand__content">
+            <a href="brand/lenovo.html" style="color:rgb(255, 0, 0); font-weight: bolder;">LENOVO</a>
+        </div>
+        
+        <div class="brand__content">
+            <a href="brand/dell.html" style="color:rgb(1, 175, 255); font-weight: bolder;">DELL</a>
+        </div>
+
+        <div class="brand__content">
+            <a href="brand/msi.html" style="color:rgb(0, 0, 0); font-weight: bolder;">MSI</a>
+        </div>
+
+        <div class="brand__content">
+            <a href="brand/surface.html" style="color:rgb(0, 0, 0); font-weight: bolder;">SURFACE</a>
+        </div>
+
+        <div class="brand__content">
+            <a href="brand/macbook.html" style="color:rgb(104, 104, 104); font-weight: bolder;"><i class="fab fa-apple"></i> MACBOOK</a>
+        </div>
+        
+    </div>
+
+
+
+    <div class="center">
+        <strong>SẢN PHẨM NỔI BẬT</strong>
+    </div>
+    
+    <div class="body">
+
+        <div class="loc">
+            <div class="danhmuc" style="font-weight: bolder;"><i class="fas fa-filter" style="margin-right: 10px; "></i>  BỘ LỌC</div>
+
+            <div class="price">
+                <p><i class="fas fa-tags"></i> Giá</p> 
+                <input type="radio" name="price__check" > Dưới 10 triệu <br>
+                <input type="radio" name="price__check" > Từ 10 triệu-15 triệu <br>
+                <input type="radio" name="price__check" > Từ 15 triệu-20 triệu <br>
+                <input type="radio" name="price__check" > Từ 20 triệu-25 triệu <br>
+                <input type="radio" name="price__check" > Từ 25 triệu-30 triệu <br>
+                <input type="radio" name="price__check" > Trên 30 triệu
+            </div>
+
+            <div class="brand">
+                <p><i class="fas fa-laptop-code"></i> Thương hiệu</p> 
+                <input type="radio" name="brand__check"> Acer <br>
+                <input type="radio" name="brand__check"> Asus <br>
+                <input type="radio" name="brand__check"> MSI <br>
+                <input type="radio" name="brand__check"> Lenovo <br>
+                <input type="radio" name="brand__check"> Dell <br>
+                <input type="radio" name="brand__check"> Microsoft <br>
+                <input type="radio" name="brand__check"> Macbook
+            </div>
+
+            <div class="loc__sp">
+                <button><i class="fas fa-search"></i> Lọc sản phẩm</button>
+            </div>
+
+        </div>
+        
+        
+        <div class="body1">
+            
+            <div class="img">
+                <a href="./detail/aceraspire5.html">
+                    <img src="../img/Acer Aspire 5 54EU(15.990.000).jpg" >
+                    <div class="caption"> <p> Acer Aspire 5 </p><br> <p> 15.990.000đ</p></div>
+                </a>    
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+    
+            <div class="img">
+                <a href="./detail/aceras7.html">
+                    <img src="../img/Acer Aspire 7 A715(17.999.000).jpg" >
+                    <div class="caption"><p>Acer Aspire 7</p> <br> <p> 17.990.000đ </p></div>
+                    
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+    
+            <div class="img">
+                <a href="./detail/asusrogstrix.html">
+                    <img src="../img/ASUS Gaming ROG Strix G531GT-HN553T(20.950.000).jpg" >
+                    <div class="caption"> <p> Asus ROG Strix</p> <br> <p> 20.950.000đ </p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+        
+            
+            <div class="img">
+                <a href="./detail/asustuf.html">
+                    <img src="../img/ASUS TUF Gaming FA506II-AL016T(22.290.000).jpg" >
+                    <div class="caption"> <p> Asus TUF FA506II</p><br> <p> 22.290.000đ</p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+    
+            <div class="img">
+                <a href="./detail/macpro.html">
+                    <img src="../img/Macbook pro 2020(35.990.000).png" >
+                    <div class="caption"> <p> MacBook Pro 2020</p><br> <p> 35.990.000đ</p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+        
+            <div class="img">
+                <a href="./detail/msimo14.html">
+                    <img src="../img/MSI Modern 14(22.190.000).png" >
+                    <div class="caption"> <p> MSI Modern 14</p><br> <p> 22.190.000đ</p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+    
+            <div class="img">
+                <a href="./detail/hppa15.html">
+                    <img src="../img/HP Pavilion 15(15.990.000).jpg" >
+                    <div class="caption"> <p> HP Pavilion 15</p><br> <p> 15.990.000đ</p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+        
+            <div class="img">
+                <a href="./detail/sur3.html">
+                    <img src="../img/Surface 3(32.990.000).jpg" >
+                    <div class="caption"> <p> Surface 3</p><br> <p> 32.990.000đ</p></div>
+                     
+                </a>
+                 <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
+            </div>
+    
+            
+        </div>
+    
+    </div>
+
+    
+    <div class="footer">
+        <div class="footer__logo">
+            <a href="index.html" >   <i class="fas fa-laptop"> AIT Store</i>   </a>
+        </div>
+
+        <div class="footer__child">
+            <div class="footer__left">
+                <div class="title">
+                    <h2>Hệ thống cửa hàng</h2>
+                </div>
+                
+                <h3>AIT Store TP HCM</h3>
+                <p>CN1:273 An Dương Vương, Quận 5</p>
+                <h3>AIT Store TP HCM</h3>
+                <p>CN2:170 Lê Hồng Phong, Quận 10</p>
+                <h3>AIT Store TP HCM</h3>
+                <p>CN3:777 Võ Văn Kiệt, Quận 5</p>
+                <h3>AIT Store Hà Nội</h3>
+                <p>CN4:999 Nguyễn Chí Thanh, Quận Hoàn Kiếm</p>
+            </div>
+
+            <div class="footer__center">
+                <div class="title">
+                    <h2>Trung tâm bảo hành</h2>
+                </div>
+                <h3>Trung tâm bảo hành 1</h3>
+                <p>CN1:273 An Dương Vương, Quận 5</p>
+                <h3>Trung tâm bảo hành 2</h3>
+                <p>CN2:170 Lê Hồng Phong, Quận 10</p>
+                <h3>Trung tâm bảo hành 3</h3>
+                <p>CN3:777 Võ Văn Kiệt, Quận 5</p>
+                <h3>Trung tâm bảo hành 4</h3>
+                <p>CN4:999 Nguyễn Chí Thanh, Quận Hoàn Kiếm</p>
+            </div>
+
+            <div class="footer__right">
+                <div class="title">
+                    <h2>Fanpage</h2>
+                </div>
+                <a href="#"><i class="fas fa-phone-square-alt"></i> 0909090909</a>
+                <a href="#"> <i class="fab fa-facebook-square"></i> AIT Store </a>
+                <a href="#"><i class="fab fa-twitter-square"></i> AIT Store</a>
+                <a href="#"><i class="fas fa-envelope"></i> Aitstore@gmail.com </a>
+            </div>
+        </div>    
+    </div>
+    
+</body>
+</html>
