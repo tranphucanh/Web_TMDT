@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIT Store-Cửa hàng Laptop</title>
+    <title>LT Store-Cửa hàng Laptop</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <script src="https://kit.fontawesome.com/6084ef8789.js" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
@@ -22,23 +22,19 @@
 
     <div class="head">
         <div class="home">
-            <a href="index.html" >   <i class="fas fa-laptop"> AIT Store</i>   </a>
+            <a href="index.html" >   <i class="fas fa-laptop"> LT Store</i>   </a>
         </div>
 
         <div class="search">
             <input class="timkiem" id="kw" type="text" placeholder="Nhập tên sản phẩm..."/> 
             <button type="submit" id="btnSearch" onclick="search()"><i class="fas fa-search"></i></button> 
         </div>
-
         
         <div class="phone">
             <a href="#"><i class="fas fa-phone-volume"></i></a>
             <a href="#"> Thông tin liên hệ </a>
             <a href="#">0909090909</a>
         </div>
-
-        
-        
     </div>
 
     <div id="thongbao">
@@ -49,7 +45,7 @@
     
             <div class="thongbao__body">
                 <h3 style="color: red;">THÔNG BÁO</h3>
-                <p>Bạn vui lòng đăng nhập để mua hàng!</p>
+                <p>Vui lòng đăng nhập để mua hàng!</p>
             </div>
     
             <div class="thongbao__close">
@@ -112,7 +108,7 @@
             <button class="drop">THÔNG TIN LIÊN HỆ</button>
             <div class="dropdown-content">
                 <a href="lienhe.html">Góp ý</a>
-                <a href="#">FB: AIT Store</a>
+                <a href="#">FB: LT Store</a>
                 <a href="#">Zalo: 0909090909</a>
             </div>
         </div>
@@ -121,42 +117,49 @@
 
 
     <div class="banner">
-        <div class="banner__content">
+        <!-- <div class="banner__content">
             <p><i class="fas fa-shipping-fast" style="margin-right: 10px;"></i>Giao hàng nhanh toàn quốc</p>
             <p><i class="fab fa-windows" style="margin-right: 10px;"></i> 100% tích hợp windows bản quyền</p>
             <p><i class="fas fa-undo-alt" style="margin-right: 10px;"></i> Đổi trả trong vòng 1 tháng</p>
             <p><i class="fas fa-shield-alt" style="margin-right: 10px;"></i> Bảo hành tới 2 năm</p>
             <p><i class="fas fa-handshake" style="margin-right: 10px;"></i> Hỗ trợ trả góp 0%</p>
-        </div>
+        </div> -->
     </div>
 
     <div class="brand__list">
         <div class="brand__content" >
-            <a href="brand/acer.html" style="color:rgb(0, 255, 0); font-weight: bolder;">ACER</a>
+            <a href="brand/acer.html" style="color:rgb(0, 255, 0); font-weight: bolder;">
+                <img src="../img/acer_logo.webp" alt="">
+            </a>
         </div>
         
         <div class="brand__content" >
-            <a href="brand/asus.html" style="color:rgb(0, 4, 255); font-weight: bolder;">ASUS</a>
+            <a href="brand/asus.html" style="color:rgb(0, 4, 255); font-weight: bolder;">
+                <img src="../img/asus_logo.webp" alt=""></a>
         </div>
 
         <div class="brand__content">
-            <a href="brand/lenovo.html" style="color:rgb(255, 0, 0); font-weight: bolder;">LENOVO</a>
+            <a href="brand/lenovo.html" style="color:rgb(255, 0, 0); font-weight: bolder;">
+                <img src="../img/lenovo_logo.webp" alt=""></a>
         </div>
         
         <div class="brand__content">
-            <a href="brand/dell.html" style="color:rgb(1, 175, 255); font-weight: bolder;">DELL</a>
+            <a href="brand/dell.html" style="color:rgb(1, 175, 255); font-weight: bolder;">
+                <img src="../img/dell_logo.webp" alt=""></a>
         </div>
 
         <div class="brand__content">
-            <a href="brand/msi.html" style="color:rgb(0, 0, 0); font-weight: bolder;">MSI</a>
+            <a href="brand/msi.html" style="color:rgb(0, 0, 0); font-weight: bolder;">
+                <img src="../img/msi_logo.webp" alt=""></a>
         </div>
 
         <div class="brand__content">
-            <a href="brand/surface.html" style="color:rgb(0, 0, 0); font-weight: bolder;">SURFACE</a>
+            <a href="brand/surface.html" style="color:rgb(0, 0, 0); font-weight: bolder;"><i class="fab fa-microsoft"></i></a></a>
         </div>
 
         <div class="brand__content">
-            <a href="brand/macbook.html" style="color:rgb(104, 104, 104); font-weight: bolder;"><i class="fab fa-apple"></i> MACBOOK</a>
+            <a href="brand/macbook.html" style="color:rgb(104, 104, 104); font-weight: bolder;">
+                <img src="../img/mac_logo.webp" alt=""></a>
         </div>
         
     </div>
@@ -169,7 +172,7 @@
     
     <div class="body">
 
-        <div class="loc">
+        <div class="filter">
             <div class="danhmuc" style="font-weight: bolder;"><i class="fas fa-filter" style="margin-right: 10px; "></i>  BỘ LỌC</div>
 
             <div class="price">
@@ -193,7 +196,7 @@
                 <input type="radio" name="brand__check"> Macbook
             </div>
 
-            <div class="loc__sp">
+            <div class="filter-btn">
                 <button><i class="fas fa-search"></i> Lọc sản phẩm</button>
             </div>
 
@@ -206,6 +209,12 @@
                 <a href="./detail/aceraspire5.html">
                     <img src="../img/Acer Aspire 5 54EU(15.990.000).jpg" >
                     <div class="caption"> <p> Acer Aspire 5 </p><br> <p> 15.990.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                 </a>    
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
             </div>
@@ -214,7 +223,12 @@
                 <a href="./detail/aceras7.html">
                     <img src="../img/Acer Aspire 7 A715(17.999.000).jpg" >
                     <div class="caption"><p>Acer Aspire 7</p> <br> <p> 17.990.000đ </p></div>
-                    
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
             </div>
@@ -223,6 +237,12 @@
                 <a href="./detail/asusrogstrix.html">
                     <img src="../img/ASUS Gaming ROG Strix G531GT-HN553T(20.950.000).jpg" >
                     <div class="caption"> <p> Asus ROG Strix</p> <br> <p> 20.950.000đ </p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -233,6 +253,12 @@
                 <a href="./detail/asustuf.html">
                     <img src="../img/ASUS TUF Gaming FA506II-AL016T(22.290.000).jpg" >
                     <div class="caption"> <p> Asus TUF FA506II</p><br> <p> 22.290.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -242,6 +268,12 @@
                 <a href="./detail/macpro.html">
                     <img src="../img/Macbook pro 2020(35.990.000).png" >
                     <div class="caption"> <p> MacBook Pro 2020</p><br> <p> 35.990.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -251,6 +283,12 @@
                 <a href="./detail/msimo14.html">
                     <img src="../img/MSI Modern 14(22.190.000).png" >
                     <div class="caption"> <p> MSI Modern 14</p><br> <p> 22.190.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -260,6 +298,12 @@
                 <a href="./detail/hppa15.html">
                     <img src="../img/HP Pavilion 15(15.990.000).jpg" >
                     <div class="caption"> <p> HP Pavilion 15</p><br> <p> 15.990.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -269,6 +313,12 @@
                 <a href="./detail/sur3.html">
                     <img src="../img/Surface 3(32.990.000).jpg" >
                     <div class="caption"> <p> Surface 3</p><br> <p> 32.990.000đ</p></div>
+                    <div class="product-info">
+                        <p><strong><i class="fas fa-microchip"></i></strong> 15-11320H RTX 3050</p>
+                        <p><strong><i class="fas fa-memory"></i></strong> 16 GB</p>
+                        <p><strong><i class="fas fa-sd-card"></i></strong> 512 GB</p>
+                        <p><strong><i class="fas fa-desktop"></i></strong> 16 inch FHD TFT</p>
+                    </div>
                      
                 </a>
                  <div class="add"> <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a> </div>
@@ -282,7 +332,7 @@
     
     <div class="footer">
         <div class="footer__logo">
-            <a href="index.html" >   <i class="fas fa-laptop"> AIT Store</i>   </a>
+            <a href="index.html" >   <i class="fas fa-laptop"> LT Store</i>   </a>
         </div>
 
         <div class="footer__child">
@@ -291,13 +341,13 @@
                     <h2>Hệ thống cửa hàng</h2>
                 </div>
                 
-                <h3>AIT Store TP HCM</h3>
+                <h3>LT Store TP HCM</h3>
                 <p>CN1:273 An Dương Vương, Quận 5</p>
-                <h3>AIT Store TP HCM</h3>
+                <h3>LT Store TP HCM</h3>
                 <p>CN2:170 Lê Hồng Phong, Quận 10</p>
-                <h3>AIT Store TP HCM</h3>
+                <h3>LT Store TP HCM</h3>
                 <p>CN3:777 Võ Văn Kiệt, Quận 5</p>
-                <h3>AIT Store Hà Nội</h3>
+                <h3>LT Store Hà Nội</h3>
                 <p>CN4:999 Nguyễn Chí Thanh, Quận Hoàn Kiếm</p>
             </div>
 
@@ -320,8 +370,8 @@
                     <h2>Fanpage</h2>
                 </div>
                 <a href="#"><i class="fas fa-phone-square-alt"></i> 0909090909</a>
-                <a href="#"> <i class="fab fa-facebook-square"></i> AIT Store </a>
-                <a href="#"><i class="fab fa-twitter-square"></i> AIT Store</a>
+                <a href="#"> <i class="fab fa-facebook-square"></i> LT Store </a>
+                <a href="#"><i class="fab fa-twitter-square"></i> LT Store</a>
                 <a href="#"><i class="fas fa-envelope"></i> Aitstore@gmail.com </a>
             </div>
         </div>    
